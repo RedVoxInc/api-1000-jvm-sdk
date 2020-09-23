@@ -15,5 +15,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    implementation("com.google.protobuf", "protobuf-java", "3.13.0")
+    implementation("org.lz4", "lz4-java", "1.7.1")
     testCompile("junit", "junit", "4.12")
 }
