@@ -1,6 +1,8 @@
 plugins {
     java
     kotlin("jvm") version "1.4.10"
+    kotlin("plugin.serialization") version "1.4.10"
+    id("org.jetbrains.dokka") version "1.4.10"
 }
 
 group = "io.redvox.apis"
@@ -8,6 +10,7 @@ version = "0.1"
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
