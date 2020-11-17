@@ -146,7 +146,7 @@ message RedvoxPacketM {
             repeated ScreenState screen_state = 13;
 
             // Screen brightness as a percentage
-            repeated float screen_brightness = 14;
+            SamplePayload screen_brightness = 14;
 
             // A map from string to string for including untyped metadata
             map<string, string> metadata = 15;
