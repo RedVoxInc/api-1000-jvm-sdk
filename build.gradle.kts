@@ -1,13 +1,13 @@
 plugins {
     `maven-publish`
     java
-    kotlin("jvm") version "1.4.10"
-    kotlin("plugin.serialization") version "1.4.10"
-    id("org.jetbrains.dokka") version "1.4.10"
+    kotlin("jvm") version "1.6.10"
+    kotlin("plugin.serialization") version "1.6.10"
+    id("org.jetbrains.dokka") version "1.6.10"
 }
 
 group = "io.redvox.apis"
-version = "0.2.1"
+version = "0.2.2"
 
 repositories {
     mavenCentral()
@@ -16,8 +16,8 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("com.google.protobuf", "protobuf-java", "3.14.0")
-    implementation("org.lz4", "lz4-java", "1.7.1")
+    implementation("com.google.protobuf", "protobuf-java", "3.19.3")
+    implementation("org.lz4", "lz4-java", "1.8.0")
     testCompile("junit", "junit", "4.12")
 }
 
